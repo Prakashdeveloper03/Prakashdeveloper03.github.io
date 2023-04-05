@@ -140,11 +140,11 @@
   window.addEventListener("resize", () => {
     if (window.innerWidth > 992) {
       select("#navbar").classList.remove("navbar-mobile");
-      let navbarToggle = select(".mobile-nav-toggle")
+      let navbarToggle = select(".mobile-nav-toggle");
       navbarToggle.classList.add("bi-list");
       navbarToggle.classList.remove("bi-x");
     }
-  })
+  });
 
   /**
    * Skills animation
