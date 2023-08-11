@@ -412,7 +412,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 
         contextModifier = axis.contextScroll - axis.contextOffset;
         waypoint.triggerPoint = Math.floor(
-          elementOffset + contextModifier - adjustment
+          elementOffset + contextModifier - adjustment,
         );
         wasBeforeScroll = oldTriggerPoint < axis.oldScroll;
         nowAfterScroll = waypoint.triggerPoint >= axis.oldScroll;

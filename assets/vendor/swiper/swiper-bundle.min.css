@@ -361,7 +361,9 @@ button.swiper-pagination-bullet {
   > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
   .swiper-pagination-bullet {
   display: inline-block;
-  transition: 0.2s transform, 0.2s top;
+  transition:
+    0.2s transform,
+    0.2s top;
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
@@ -380,12 +382,16 @@ button.swiper-pagination-bullet {
   .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
   .swiper-pagination-bullet {
-  transition: 0.2s transform, 0.2s left;
+  transition:
+    0.2s transform,
+    0.2s left;
 }
 .swiper-horizontal.swiper-rtl
   > .swiper-pagination-bullets-dynamic
   .swiper-pagination-bullet {
-  transition: 0.2s transform, 0.2s right;
+  transition:
+    0.2s transform,
+    0.2s right;
 }
 .swiper-pagination-progressbar {
   background: rgba(0, 0, 0, 0.25);

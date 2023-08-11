@@ -101,7 +101,7 @@
         scrollto(this.hash);
       }
     },
-    true
+    true,
   );
 
   /**
@@ -219,7 +219,7 @@
             filter: this.getAttribute("data-filter"),
           });
         },
-        true
+        true,
       );
     }
   });

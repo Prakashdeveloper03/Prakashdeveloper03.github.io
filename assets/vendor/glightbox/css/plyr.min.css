@@ -86,7 +86,9 @@
   -webkit-transition: -webkit-box-shadow 0.3s ease;
   transition: -webkit-box-shadow 0.3s ease;
   transition: box-shadow 0.3s ease;
-  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    -webkit-box-shadow 0.3s ease;
   z-index: 0;
 }
 .plyr audio,
@@ -157,7 +159,9 @@
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition:
+    transform 0.4s ease-in-out,
+    -webkit-transform 0.4s ease-in-out;
   width: 100%;
 }
 .plyr__captions span:empty {
@@ -312,7 +316,9 @@ a.plyr__control:before {
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    -webkit-transform 0.3s ease;
 }
 .plyr__menu .plyr__control[aria-expanded="true"] svg {
   -webkit-transform: rotate(90deg);
@@ -349,9 +355,11 @@ a.plyr__control:before {
 }
 .plyr__menu__container > div {
   overflow: hidden;
-  -webkit-transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+  -webkit-transition:
+    height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
     width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
     width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .plyr__menu__container:after {
@@ -533,10 +541,18 @@ a.plyr__control:before {
   top: 50%;
   -webkit-transform: translateY(-50%) scale(0);
   transform: translateY(-50%) scale(0);
-  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
-  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  transition: transform 0.3s ease, opacity 0.3s ease,
+  -webkit-transition:
+    opacity 0.3s ease,
+    -webkit-transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    -webkit-transform 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
     -webkit-transform 0.3s ease;
   width: 6px;
 }
@@ -605,7 +621,9 @@ a.plyr__control:before {
   -webkit-transition: -webkit-box-shadow 0.3s ease;
   transition: -webkit-box-shadow 0.3s ease;
   transition: box-shadow 0.3s ease;
-  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    -webkit-box-shadow 0.3s ease;
   width: 100%;
 }
 .plyr--full-ui input[type="range"]::-webkit-slider-runnable-track {
@@ -642,7 +660,9 @@ a.plyr__control:before {
   -webkit-transition: -webkit-box-shadow 0.3s ease;
   transition: -webkit-box-shadow 0.3s ease;
   transition: box-shadow 0.3s ease;
-  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    -webkit-box-shadow 0.3s ease;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -657,9 +677,12 @@ a.plyr__control:before {
   -webkit-box-shadow: 0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15)
     rgba(35, 40, 47, 0.2);
   box-shadow: 0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2);
-  -webkit-box-shadow: 0 1px 1px rgba(35, 40, 47, 0.15),
+  -webkit-box-shadow:
+    0 1px 1px rgba(35, 40, 47, 0.15),
     0 0 0 1px rgba(35, 40, 47, 0.2);
-  box-shadow: 0 1px 1px rgba(35, 40, 47, 0.15), 0 0 0 1px rgba(35, 40, 47, 0.2);
+  box-shadow:
+    0 1px 1px rgba(35, 40, 47, 0.15),
+    0 0 0 1px rgba(35, 40, 47, 0.2);
   -webkit-box-shadow: var(
     --plyr-range-thumb-shadow,
     0 1px 1px rgba(35, 40, 47, 0.15),
@@ -707,7 +730,9 @@ a.plyr__control:before {
   border: 0;
   border-radius: 100%;
   box-shadow: 0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2);
-  box-shadow: 0 1px 1px rgba(35, 40, 47, 0.15), 0 0 0 1px rgba(35, 40, 47, 0.2);
+  box-shadow:
+    0 1px 1px rgba(35, 40, 47, 0.15),
+    0 0 0 1px rgba(35, 40, 47, 0.2);
   box-shadow: var(
     --plyr-range-thumb-shadow,
     0 1px 1px rgba(35, 40, 47, 0.15),
@@ -772,7 +797,9 @@ a.plyr__control:before {
   border: 0;
   border-radius: 100%;
   box-shadow: 0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2);
-  box-shadow: 0 1px 1px rgba(35, 40, 47, 0.15), 0 0 0 1px rgba(35, 40, 47, 0.2);
+  box-shadow:
+    0 1px 1px rgba(35, 40, 47, 0.15),
+    0 0 0 1px rgba(35, 40, 47, 0.2);
   box-shadow: var(
     --plyr-range-thumb-shadow,
     0 1px 1px rgba(35, 40, 47, 0.15),
@@ -905,10 +932,18 @@ a.plyr__control:before {
   transform: translate(-50%, 10px) scale(0.8);
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
-  -webkit-transition: opacity 0.2s ease 0.1s, -webkit-transform 0.2s ease 0.1s;
-  transition: opacity 0.2s ease 0.1s, -webkit-transform 0.2s ease 0.1s;
-  transition: transform 0.2s ease 0.1s, opacity 0.2s ease 0.1s;
-  transition: transform 0.2s ease 0.1s, opacity 0.2s ease 0.1s,
+  -webkit-transition:
+    opacity 0.2s ease 0.1s,
+    -webkit-transform 0.2s ease 0.1s;
+  transition:
+    opacity 0.2s ease 0.1s,
+    -webkit-transform 0.2s ease 0.1s;
+  transition:
+    transform 0.2s ease 0.1s,
+    opacity 0.2s ease 0.1s;
+  transition:
+    transform 0.2s ease 0.1s,
+    opacity 0.2s ease 0.1s,
     -webkit-transform 0.2s ease 0.1s;
   white-space: nowrap;
   z-index: 2;
@@ -1214,23 +1249,30 @@ a.plyr__control:before {
   );
 }
 .plyr--full-ui.plyr--audio input[type="range"]:active::-webkit-slider-thumb {
-  -webkit-box-shadow: 0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15)
-      rgba(35, 40, 47, 0.2),
+  -webkit-box-shadow:
+    0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
     0 0 0 3px rgba(35, 40, 47, 0.1);
-  box-shadow: 0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
+  box-shadow:
+    0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
     0 0 0 3px rgba(35, 40, 47, 0.1);
-  -webkit-box-shadow: 0 1px 1px rgba(35, 40, 47, 0.15),
-    0 0 0 1px rgba(35, 40, 47, 0.2), 0 0 0 3px rgba(35, 40, 47, 0.1);
-  box-shadow: 0 1px 1px rgba(35, 40, 47, 0.15), 0 0 0 1px rgba(35, 40, 47, 0.2),
+  -webkit-box-shadow:
+    0 1px 1px rgba(35, 40, 47, 0.15),
+    0 0 0 1px rgba(35, 40, 47, 0.2),
     0 0 0 3px rgba(35, 40, 47, 0.1);
-  -webkit-box-shadow: var(
+  box-shadow:
+    0 1px 1px rgba(35, 40, 47, 0.15),
+    0 0 0 1px rgba(35, 40, 47, 0.2),
+    0 0 0 3px rgba(35, 40, 47, 0.1);
+  -webkit-box-shadow:
+    var(
       --plyr-range-thumb-shadow,
       0 1px 1px rgba(35, 40, 47, 0.15),
       0 0 0 1px rgba(35, 40, 47, 0.2)
     ),
     0 0 0 var(--plyr-range-thumb-active-shadow-width, 3px)
       var(--plyr-audio-range-thumb-active-shadow-color, rgba(35, 40, 47, 0.1));
-  box-shadow: var(
+  box-shadow:
+    var(
       --plyr-range-thumb-shadow,
       0 1px 1px rgba(35, 40, 47, 0.15),
       0 0 0 1px rgba(35, 40, 47, 0.2)
@@ -1239,11 +1281,15 @@ a.plyr__control:before {
       var(--plyr-audio-range-thumb-active-shadow-color, rgba(35, 40, 47, 0.1));
 }
 .plyr--full-ui.plyr--audio input[type="range"]:active::-moz-range-thumb {
-  box-shadow: 0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
+  box-shadow:
+    0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
     0 0 0 3px rgba(35, 40, 47, 0.1);
-  box-shadow: 0 1px 1px rgba(35, 40, 47, 0.15), 0 0 0 1px rgba(35, 40, 47, 0.2),
+  box-shadow:
+    0 1px 1px rgba(35, 40, 47, 0.15),
+    0 0 0 1px rgba(35, 40, 47, 0.2),
     0 0 0 3px rgba(35, 40, 47, 0.1);
-  box-shadow: var(
+  box-shadow:
+    var(
       --plyr-range-thumb-shadow,
       0 1px 1px rgba(35, 40, 47, 0.15),
       0 0 0 1px rgba(35, 40, 47, 0.2)
@@ -1252,11 +1298,15 @@ a.plyr__control:before {
       var(--plyr-audio-range-thumb-active-shadow-color, rgba(35, 40, 47, 0.1));
 }
 .plyr--full-ui.plyr--audio input[type="range"]:active::-ms-thumb {
-  box-shadow: 0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
+  box-shadow:
+    0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
     0 0 0 3px rgba(35, 40, 47, 0.1);
-  box-shadow: 0 1px 1px rgba(35, 40, 47, 0.15), 0 0 0 1px rgba(35, 40, 47, 0.2),
+  box-shadow:
+    0 1px 1px rgba(35, 40, 47, 0.15),
+    0 0 0 1px rgba(35, 40, 47, 0.2),
     0 0 0 3px rgba(35, 40, 47, 0.1);
-  box-shadow: var(
+  box-shadow:
+    var(
       --plyr-range-thumb-shadow,
       0 1px 1px rgba(35, 40, 47, 0.15),
       0 0 0 1px rgba(35, 40, 47, 0.2)
@@ -1347,11 +1397,18 @@ a.plyr__control:before {
   padding-top: calc(var(--plyr-control-spacing, 10px) * 2);
   position: absolute;
   right: 0;
-  -webkit-transition: opacity 0.4s ease-in-out,
+  -webkit-transition:
+    opacity 0.4s ease-in-out,
     -webkit-transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out,
+  transition:
+    opacity 0.4s ease-in-out,
+    -webkit-transform 0.4s ease-in-out;
+  transition:
+    opacity 0.4s ease-in-out,
+    transform 0.4s ease-in-out;
+  transition:
+    opacity 0.4s ease-in-out,
+    transform 0.4s ease-in-out,
     -webkit-transform 0.4s ease-in-out;
   z-index: 3;
 }
@@ -1440,23 +1497,30 @@ a.plyr__control:before {
   );
 }
 .plyr--full-ui.plyr--video input[type="range"]:active::-webkit-slider-thumb {
-  -webkit-box-shadow: 0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15)
-      rgba(35, 40, 47, 0.2),
+  -webkit-box-shadow:
+    0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
     0 0 0 3px rgba(255, 255, 255, 0.5);
-  box-shadow: 0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
+  box-shadow:
+    0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
     0 0 0 3px rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 0 1px 1px rgba(35, 40, 47, 0.15),
-    0 0 0 1px rgba(35, 40, 47, 0.2), 0 0 0 3px hsla(0, 0%, 100%, 0.5);
-  box-shadow: 0 1px 1px rgba(35, 40, 47, 0.15), 0 0 0 1px rgba(35, 40, 47, 0.2),
+  -webkit-box-shadow:
+    0 1px 1px rgba(35, 40, 47, 0.15),
+    0 0 0 1px rgba(35, 40, 47, 0.2),
     0 0 0 3px hsla(0, 0%, 100%, 0.5);
-  -webkit-box-shadow: var(
+  box-shadow:
+    0 1px 1px rgba(35, 40, 47, 0.15),
+    0 0 0 1px rgba(35, 40, 47, 0.2),
+    0 0 0 3px hsla(0, 0%, 100%, 0.5);
+  -webkit-box-shadow:
+    var(
       --plyr-range-thumb-shadow,
       0 1px 1px rgba(35, 40, 47, 0.15),
       0 0 0 1px rgba(35, 40, 47, 0.2)
     ),
     0 0 0 var(--plyr-range-thumb-active-shadow-width, 3px)
       var(--plyr-audio-range-thumb-active-shadow-color, hsla(0, 0%, 100%, 0.5));
-  box-shadow: var(
+  box-shadow:
+    var(
       --plyr-range-thumb-shadow,
       0 1px 1px rgba(35, 40, 47, 0.15),
       0 0 0 1px rgba(35, 40, 47, 0.2)
@@ -1465,11 +1529,15 @@ a.plyr__control:before {
       var(--plyr-audio-range-thumb-active-shadow-color, hsla(0, 0%, 100%, 0.5));
 }
 .plyr--full-ui.plyr--video input[type="range"]:active::-moz-range-thumb {
-  box-shadow: 0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
+  box-shadow:
+    0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
     0 0 0 3px rgba(255, 255, 255, 0.5);
-  box-shadow: 0 1px 1px rgba(35, 40, 47, 0.15), 0 0 0 1px rgba(35, 40, 47, 0.2),
+  box-shadow:
+    0 1px 1px rgba(35, 40, 47, 0.15),
+    0 0 0 1px rgba(35, 40, 47, 0.2),
     0 0 0 3px hsla(0, 0%, 100%, 0.5);
-  box-shadow: var(
+  box-shadow:
+    var(
       --plyr-range-thumb-shadow,
       0 1px 1px rgba(35, 40, 47, 0.15),
       0 0 0 1px rgba(35, 40, 47, 0.2)
@@ -1478,11 +1546,15 @@ a.plyr__control:before {
       var(--plyr-audio-range-thumb-active-shadow-color, hsla(0, 0%, 100%, 0.5));
 }
 .plyr--full-ui.plyr--video input[type="range"]:active::-ms-thumb {
-  box-shadow: 0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
+  box-shadow:
+    0 1px 1px 0 0 0 1px rgba(35, 40, 47, 0.15) rgba(35, 40, 47, 0.2),
     0 0 0 3px rgba(255, 255, 255, 0.5);
-  box-shadow: 0 1px 1px rgba(35, 40, 47, 0.15), 0 0 0 1px rgba(35, 40, 47, 0.2),
+  box-shadow:
+    0 1px 1px rgba(35, 40, 47, 0.15),
+    0 0 0 1px rgba(35, 40, 47, 0.2),
     0 0 0 3px hsla(0, 0%, 100%, 0.5);
-  box-shadow: var(
+  box-shadow:
+    var(
       --plyr-range-thumb-shadow,
       0 1px 1px rgba(35, 40, 47, 0.15),
       0 0 0 1px rgba(35, 40, 47, 0.2)
@@ -1657,10 +1729,18 @@ a.plyr__control:before {
   transform: translateY(10px) scale(0.8);
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
-  -webkit-transition: opacity 0.2s ease 0.1s, -webkit-transform 0.2s ease 0.1s;
-  transition: opacity 0.2s ease 0.1s, -webkit-transform 0.2s ease 0.1s;
-  transition: transform 0.2s ease 0.1s, opacity 0.2s ease 0.1s;
-  transition: transform 0.2s ease 0.1s, opacity 0.2s ease 0.1s,
+  -webkit-transition:
+    opacity 0.2s ease 0.1s,
+    -webkit-transform 0.2s ease 0.1s;
+  transition:
+    opacity 0.2s ease 0.1s,
+    -webkit-transform 0.2s ease 0.1s;
+  transition:
+    transform 0.2s ease 0.1s,
+    opacity 0.2s ease 0.1s;
+  transition:
+    transform 0.2s ease 0.1s,
+    opacity 0.2s ease 0.1s,
     -webkit-transform 0.2s ease 0.1s;
   z-index: 2;
 }

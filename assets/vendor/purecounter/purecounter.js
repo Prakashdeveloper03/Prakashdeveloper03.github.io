@@ -74,7 +74,7 @@
             if (this.intersectionListenerSupported()) {
               var t = new IntersectionObserver(
                 this.animateElements.bind(this),
-                { root: null, rootMargin: "20px", threshold: 0.5 }
+                { root: null, rootMargin: "20px", threshold: 0.5 },
               );
               e.forEach(function (e) {
                 t.observe(e);
@@ -87,7 +87,7 @@
                   function (t) {
                     this.animateLegacy(e);
                   },
-                  { passive: !0 }
+                  { passive: !0 },
                 ));
           },
         },
@@ -157,13 +157,13 @@
                     : Object.getOwnPropertyDescriptors
                     ? Object.defineProperties(
                         r,
-                        Object.getOwnPropertyDescriptors(a)
+                        Object.getOwnPropertyDescriptors(a),
                       )
                     : e(Object(a)).forEach(function (e) {
                         Object.defineProperty(
                           r,
                           e,
-                          Object.getOwnPropertyDescriptor(a, e)
+                          Object.getOwnPropertyDescriptor(a, e),
                         );
                       });
                 }
