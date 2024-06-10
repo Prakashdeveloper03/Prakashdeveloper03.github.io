@@ -155,17 +155,17 @@
                         t(r, e, a[e]);
                       })
                     : Object.getOwnPropertyDescriptors
-                    ? Object.defineProperties(
-                        r,
-                        Object.getOwnPropertyDescriptors(a),
-                      )
-                    : e(Object(a)).forEach(function (e) {
-                        Object.defineProperty(
+                      ? Object.defineProperties(
                           r,
-                          e,
-                          Object.getOwnPropertyDescriptor(a, e),
-                        );
-                      });
+                          Object.getOwnPropertyDescriptors(a),
+                        )
+                      : e(Object(a)).forEach(function (e) {
+                          Object.defineProperty(
+                            r,
+                            e,
+                            Object.getOwnPropertyDescriptor(a, e),
+                          );
+                        });
                 }
                 return r;
               })({}, this.configOptions),
@@ -210,12 +210,12 @@
               ((e = Math.abs(Number(e))) >= 1e12
                 ? "".concat((e / 1e12).toFixed(n), " T")
                 : e >= 1e9
-                ? "".concat((e / 1e9).toFixed(n), " B")
-                : e >= 1e6
-                ? "".concat((e / 1e6).toFixed(n), " M")
-                : e >= 1e3
-                ? "".concat((e / 1e12).toFixed(n), " K")
-                : e.toFixed(n))
+                  ? "".concat((e / 1e9).toFixed(n), " B")
+                  : e >= 1e6
+                    ? "".concat((e / 1e6).toFixed(n), " M")
+                    : e >= 1e3
+                      ? "".concat((e / 1e12).toFixed(n), " K")
+                      : e.toFixed(n))
             );
           },
         },
@@ -250,10 +250,10 @@
             return /^[0-9]+\.[0-9]+$/.test(e)
               ? parseFloat(e)
               : /^[0-9]+$/.test(e)
-              ? parseInt(e)
-              : /^true|false/i.test(e)
-              ? /^true/i.test(e)
-              : e;
+                ? parseInt(e)
+                : /^true|false/i.test(e)
+                  ? /^true/i.test(e)
+                  : e;
           },
         },
         {
